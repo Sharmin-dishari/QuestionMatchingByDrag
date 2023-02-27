@@ -126,6 +126,7 @@ export default {
       this.matchedIndex = null;
     },
     undoMatch(index) {
+      console.log(index, "sharmin");
       const matchedAnswer = this.matches[index];
       const matchedAnswerIndex = this.matchedAnswers.indexOf(matchedAnswer);
       this.matches.splice(index, 1, null);
@@ -183,7 +184,7 @@ export default {
     width: 25%;
   }
   .card {
-    width: 230px;
+    max-width: 230px;
     min-height: 40px;
   }
   .right {
