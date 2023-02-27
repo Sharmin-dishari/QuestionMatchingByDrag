@@ -141,7 +141,7 @@ export default {
 }
 
 .left {
-  width: 50%;
+  width: 8%;
 }
 .all-scroll {
   cursor: all-scroll;
@@ -165,7 +165,7 @@ export default {
   margin-bottom: 25px;
   border-radius: 15px;
   max-width: 230px;
-  height: 50px;
+  min-height: 40px;
 }
 .cardColr {
   background-color: #eef7fc;
@@ -178,16 +178,20 @@ export default {
   border: 1px solid #ccc;
   margin-left: 5px;
 }
-@media only screen and (width: 400px) {
+@media only screen and (width> 1300px) {
   .left {
-    width: 60%;
+    width: 25%;
+  }
+  .card {
+    width: 230px;
+    min-height: 40px;
   }
   .right {
-    width: 10%;
+    width: 50%;
     margin-left: 100px;
   }
   .center {
-    width: 30%;
+    width: 20%;
   }
 }
 </style>
